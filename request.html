@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Request Service — ShadiiiTechs</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #003366;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .request-page {
+      max-width: 520px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .request-page h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #003366;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #0055cc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background: #003366;
+      color: white;
+      padding: 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #002855;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #003366;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SHADIIITECHS — Request Service</h1>
+</header>
+
+<section class="request-page">
+
+  <h2>Tell Us What You Need</h2>
+  <p style="text-align:center; margin-top:-5px;">
+    Fill in your request below — we will respond within 24 hours.
+  </p>
+
+  <!-- NETLIFY FORM START -->
+  <form 
+    name="request"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="thankyou.html"
+  >
+
+    <!-- Anti-spam (hidden) -->
+    <input type="hidden" name="form-name" value="request">
+    <input type="hidden" name="bot-field">
+
+    <!-- USER FIELDS -->
+    <label>Full Name</label>
+    <input type="text" name="fullname" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" required>
+
+    <label>Business Name (optional)</label>
+    <input type="text" name="business">
+
+    <label>Service Needed</label>
+    <select name="service" required>
+      <option value="">Select option</option>
+      <option>Website Design</option>
+      <option>Branding & Digital Design</option>
+      <option>Training & Tech Support</option>
+      <option>Consultation</option>
+      <option>Other Request</option>
+    </select>
+
+    <label>Describe Your Request</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <button type="submit">Submit Request</button>
+
+  </form>
+  <!-- NETLIFY FORM END -->
+
+</section>
+
+<footer>
+  © SHADIIITECHS 2025 — Elegant · Innovative · Professional
+</footer>
+
+</body>
+</html>
