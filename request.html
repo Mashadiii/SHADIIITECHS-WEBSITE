@@ -99,34 +99,33 @@
     Fill in your request below — we will respond within 24 hours.
   </p>
 
-  <!-- NETLIFY FORM START -->
+  <!-- FORMSUBMIT VERSION (GITHUB PAGES COMPATIBLE) -->
   <form 
-    name="request"
+    action="https://formsubmit.co/mashadinsthudisane@gmail.com"
     method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    action="thankyou.html"
   >
 
-    <!-- Anti-spam (hidden) -->
-    <input type="hidden" name="form-name" value="request">
-    <input type="hidden" name="bot-field">
+    <!-- Redirect to thankyou.html -->
+    <input type="hidden" name="_next" value="https://mashadiii.github.io/SHADIIITECHS-WEBSITE/thankyou.html">
+
+    <!-- Disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
     <!-- USER FIELDS -->
     <label>Full Name</label>
-    <input type="text" name="fullname" required>
+    <input type="text" name="Full Name" required>
 
     <label>Email Address</label>
-    <input type="email" name="email" required>
+    <input type="email" name="Email" required>
 
     <label>Phone Number</label>
-    <input type="tel" name="phone" required>
+    <input type="tel" name="Phone" required>
 
     <label>Business Name (optional)</label>
-    <input type="text" name="business">
+    <input type="text" name="Business">
 
     <label>Service Needed</label>
-    <select name="service" required>
+    <select name="Service Requested" required>
       <option value="">Select option</option>
       <option>Website Design</option>
       <option>Branding & Digital Design</option>
@@ -136,12 +135,11 @@
     </select>
 
     <label>Describe Your Request</label>
-    <textarea name="message" rows="6" required></textarea>
+    <textarea name="Message" rows="6" required></textarea>
 
     <button type="submit">Submit Request</button>
 
   </form>
-  <!-- NETLIFY FORM END -->
 
 </section>
 
@@ -151,3 +149,4 @@
 
 </body>
 </html>
+
